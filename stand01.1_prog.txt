@@ -1,4 +1,4 @@
-Im php/javascript code sollen folgende Funktionen enstehen:
+Im php oder javascript code sollen folgende Funktionen enstehen:
 
 - Die Abläufe des Textadventure, dass heißt die Verzweigungen
   der verschiedenen Szenarien anhand der Entscheidung des Spielers
