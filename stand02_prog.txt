@@ -34,5 +34,5 @@ Im php oder javascript code sollen folgende Funktionen enstehen:
 function changeScene(szene){
   changeImage(); //In die Klammern soll die Szene gewählt werden und aus der Szene der Pfad zum Bild 
   changeText();
-  changeButtons(.);
+  changeButtons();
 }
