@@ -26,11 +26,13 @@ Im php oder javascript code sollen folgende Funktionen enstehen:
 
  //Eine Funktion die den Text ändern soll im zugehörigen Html-Container
  
- function changeText(){
-  document.getElementById("text").innerHtml = "Text";
+ function changeText(satz){
+  document.getElementById("text").innerHtml = satz;
 }
 
 //Das Wechseln einer Szene soll mithilfe der 3 vorherigen Funktionen geschehen
-function changeScene(){
-
+function changeScene(szene){
+  changeImage(); //In die Klammern soll die Szene gewählt werden und aus der Szene der Pfad zum Bild 
+  changeText();
+  changeButtons(.);
 }
