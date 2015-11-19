@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>THE FORSAKEN WORDS - Das Spiel</title>
+	
+		<link href="style.css"	type="text/css"	rel="stylesheet" />
+		
+</head>
+
+<body>
+	
+	<img id="image"  src="bild.png" />
+
+	<p id="text">Random Text</p>
+
+	<button type="button" onclick="changeImage(szenario.image),changeText(szenario.text)">Try it</button>
+	<script>
+	
+	var image = document.getElementById("image");
+	var text = document.getElementById("text");
+	var buttonBox = document.getElementById("button");
+	
+ 
+	//Eine Funktion die das angezeigte Bild ändern soll im zugehörigen Html-Container
+	
+	function changeImage(bild) {
+	image.src = bild;
+	}
+
+	//Eine Funktion die die Eingabebuttons wechselt ändern soll im zugehörigen Html-Container
+ 
+	function changeButtons(){
+ 
+	}
+
+	//Eine Funktion die den Text ändern soll im zugehörigen Html-Container
+ 
+	function changeText(texte){
+	text.innerHTML = (texte);
+	}
+
+	
+
+	//Das Wechseln einer Szene soll mithilfe der 3 vorherigen Funktionen geschehen
+	function changeScene(szene){
+	changeImage(szene.image); //In die Klammern soll die Szene gewählt werden und aus der Szene der Pfad zum Bild 
+	changeText(szene.text);
+	//changeButtons();
+	}
+
+	// Ein Array was die Szenen Texte, Bilder und Texte und die Buttons enthält.
+	var szenario = {
+	image : "platzhalter.png",
+	text :"Probe Versuch !!",
+	buttons :""
+	}
+
+	
+	</script>
+</body>
+</html>
