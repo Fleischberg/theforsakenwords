@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>THE FORSAKEN WORDS - Das Spiel</title>
+	
+		<link href="style.css"	type="text/css"	rel="stylesheet" />
+		
+</head>
+
+<body>
+	
+	<img id="image"  src="bild.png" />
+
+	<p id="text">Random Text</p>
+
+	<button id="button"></button>
+	<script>
+	/*
+  Im php oder javascript code sollen folgende Funktionen enstehen:
+
+  - Die Abläufe des Textadventure, dass heißt die Verzweigungen
+    der verschiedenen Szenarien anhand der Entscheidung des Spielers
+    wobei ein Text angezeigt wird als auch ein Bild zum Szenario.
+    Bilder sollen sich passend zum Szenario geändert werden.
+  
+  - Das Kampfsystem welches wir uns überlegt haben.
+    Es funktioniert mit Wahrscheinlichkeiten und je 
+    fordener der Kampf ist desto geringer soll die Chance Schaden 
+    zu geben werden und die Chance Schaden zu nehmen soll steigen.
+  */
+	
+	
+	var image = document.getElementById("image");
+	var text = document.getElementById("text");
+	var button = document.getElementById("button");
+	
+ 
+	//Eine Funktion die das angezeigte Bild ändern soll im zugehörigen Html-Container
+	
+	function changeImage(bild) {
+		image.src = bild;
+	}
+
+	//Eine Funktion die die Eingabebuttons wechselt ändern soll im zugehörigen Html-Container
+ 
+	function changeButtons(buttonList){
+	  button.innerHTML = "";
+		for (var i = 0; i < buttonList.length; i++) {
+		button.innerHTML += "<button onClick="+buttonList[i][1]+">" + buttonList[i][0] + "</button>";
+		}
+ 
+	}
+
+	//Eine Funktion die den Text ändern soll im zugehörigen Html-Container
+ 
+	function changeText(texte){
+		text.innerHTML = (texte);
+	}
+
+	
+
+	//Das Wechseln einer Szene soll mithilfe der 3 vorherigen Funktionen geschehen
+	function changeScene(szene){
+		changeImage(szene.image); //In die Klammern soll die Szene gewählt werden und aus der Szene der Pfad zum Bild 
+		changeText(szene.text);
+		changeButtons(szene.buttons);
+	}
+
+	// Ein Array was die Szenen Texte, Bilder und Texte und die Buttons enthält.
+	var szenario = {
+		image : "platzhalter.png",
+		text :"Probe Versuch !!",
+		buttons :[["Zurück", "changeScene(start)"]]
+	}
+	var start = {
+		image : "bild.png",
+		text :"Probe Versuch !!",
+		buttons :[["Start", "changeScene(szenario)"]]
+	}
+	changeScene(start);
+
+	
+	</script>
+</body>
+</html>
