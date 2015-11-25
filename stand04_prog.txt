@@ -1,0 +1,100 @@
+  /*
+Im php oder javascript code sollen folgende Funktionen enstehen:
+
+- Die Abläufe des Textadventure, dass heißt die Verzweigungen
+  der verschiedenen Szenarien anhand der Entscheidung des Spielers
+  wobei ein Text angezeigt wird als auch ein Bild zum Szenario.
+  Bilder sollen sich passend zum Szenario geändert werden.
+  
+- Das Kampfsystem welches wir uns überlegt haben.
+  Es funktioniert mit Wahrscheinlichkeiten und je 
+  fordener der Kampf ist desto geringer soll die Chance Schaden 
+  zu geben werden und die Chance Schaden zu nehmen soll steigen.
+ */
+  
+  var image = document.getElementById("image");
+	var text = document.getElementById("text");
+	var button = document.getElementById("button");
+	var playerLife = 10;
+	
+ 
+	//Eine Funktion die das angezeigte Bild ändern soll im zugehörigen Html-Container
+	
+	function changeImage(bild) {
+		image.src = bild;
+	}
+
+	//Eine Funktion die die Eingabebuttons wechselt ändern soll im zugehörigen Html-Container
+ 
+	function changeButtons(buttonList){
+	  button.innerHTML = "";
+		for (var i = 0; i <= buttonList.length; i++) {
+		button.innerHTML += "<button onClick="+buttonList[i][1]+">" + buttonList[i][0] + "</button>";
+		}
+	}
+
+	//Eine Funktion die den Text ändern soll im zugehörigen Html-Container
+ 
+	function changeText(texte){
+		text.innerHTML = (texte);
+	}
+
+	
+
+	//Das Wechseln einer Szene soll mithilfe der 3 vorherigen Funktionen geschehen
+	function changeScene(szene){
+		changeImage(szene.image); //In die Klammern soll die Szene gewählt werden und aus der Szene der Pfad zum Bild 
+		changeText(szene.text);
+		changeButtons(szene.buttons);
+	}
+	//Die Kampffunktion wird noch geschrieben
+
+	// Ein Array was die Szenen Texte, Bilder und Texte und die Buttons enthält.
+	var szenario = {
+		image : "platzhalter.png",
+		text :"Probe Versuch !!",
+		buttons :[["Zurück", "changeScene(start)"],["Abenteuer", "changeScene(szenea)"]]
+	}
+	var start = {
+		image : "bild.png",
+		text :"Probe Versuch !!",
+		buttons :[["Start", "changeScene(szenario)"]]
+	}
+	var szeneStart = {
+		image : "platzhalter.png",
+		text :"Bist du bereit deine Reise zu starten?",
+		buttons :[["Start", "changeScene(szenea)"]]
+	}
+	var szenea ={
+		image :"platzhalter.png",//Bild einer Bauernscheune
+		text :"Du befindest dich auf deiner Farm in der Ferne siehst du eine Gruppe Orks auf deine Farm zukommen. Was tust du?",
+		buttons :[["Weglaufen(Wald)","changeScene(szenea1)"],["Verstecken(Farm)","changeScene(szenea2)"],["Kämpfen","changeScene(gameover)"]]
+	}
+	var szenea1 ={
+		image :"platzhalter.png",//Bild eines Waldes
+		text :"Du befindest dich am Rande des Waldes die Orks haben haben dich nicht bemerkt vor dir siehst du 2 Wege die Hauptstraße und einen Waldweg.\nWelchen Weg nimmst du?",
+		buttons :[["Haupstraße","changeScene(szenario)"],["Waldweg","changeScene(szenario)"]]
+	}
+	var szenea2 ={
+		image :"platzhalter.png",//Scheune
+		text :"Du hast dich in der Scheune versteckt die Orks sind angekommen und verwüsten deine Farm!!",
+		buttons :[["Hinterhalt starten","changeScene(gameover)"],["Orks belauschen","changeScene(szenea2b)"]]
+	}
+	var gameover ={
+		image :"platzhalter.png",//Bild mit Game Over
+		text :"Du bist tot....",
+		buttons :[["Neustart?","changeScene(szeneStart)"]]
+	}
+	var szenea2b ={
+		image :"platzhalter.png",//Scheune
+		text :"Du verstehst die Orks nur grob aber du erfährst das die Hauptstraße von der Orkarmee besetzt ist. Kurze Zeit später ziehen die Orks weiter.",
+		buttons :[["In den Wald laufen","changeScene(szenea1)"]]
+	}
+	var szene ={
+		image :"",
+		text :"",
+		buttons :[]
+	}
+	changeScene(szeneStart);
+
+	
