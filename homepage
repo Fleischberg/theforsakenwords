@@ -16,6 +16,6 @@
 
 
 
-
+	<input autofocus type="text" value="" /> 
 </body>
 </html>
