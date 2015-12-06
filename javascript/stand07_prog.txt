@@ -84,7 +84,7 @@ Im php oder javascript code sollen folgende Funktionen enstehen:
 	var schadenGegnerEasy = [1, 1, 0, 0, 0];
 	var schadenGegnerNormal = [2, 1, 1, 0, 0];
 	
-	
+	//Blocken vond Schaden wird demnächst noch eingebaut als Alternative zum Angreifen.
 	function kampf(s){
 		if(s=="a"){
 			schadenH = schadenHeldEasy[Math.floor(Math.random()*schadenHeldEasy.length)];//Zufälliger Wert aus dem Array als Schaden
