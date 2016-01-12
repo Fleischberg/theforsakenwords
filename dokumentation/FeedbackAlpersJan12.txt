@@ -1,0 +1,14 @@
+Liebe Studierende,
+
+leider kann ich mir Ihr Projekt erst heute ansehen, da ich nicht erfahren habe, dass Sie das Verzeichnis gewechselt haben.
+
+Momentan kann ich Ihnen leider auch nicht viel dazu sagen, weil Sie die eigentlichen Projektdateien nicht hochgeladen haben, sondern Programmzeilen und Dokumentation in einer Datei gemischt und zum Teil veraltete und aktuelle Programmzeilen kombiniert haben.
+
+Deshalb hier kurz folgende Hinweise: 
+
+- Die Dokumentation zum HTML-Teil gehört in Dateien mit dem Namen html01.txt, html02.txt, html03.txt usw. wobei die Nummer nur dafür da ist, um leicht erkennbar zu machen, in welcher Reihenfolge die Dokumentation erstellt wurde. Die Dokumentation zum PHP-Teil gehört in entsprechend benannte Dateien. Alle Dokumentatationsdateien gehören in das Verzeichnis Dokumentation.
+
+- Der Quellcode gehört in Dateien, die mit der entsprechenden Dateiendung versehen sind.
+
+Viele Grüße,
+Markus Alpers
