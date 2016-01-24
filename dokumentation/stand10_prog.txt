@@ -1,0 +1,9 @@
+Code ist als .js Datei hochgeladen.
+Bisher im Spiel :
+-Story der Einführung(Chapter 0).
+-Festgelegte Kampfsituationen.
+-Kampfsystem mit Angreifen  /Blocken  und Heilen.
+
+Demnächst :
+-Weitere Story.
+(Vielleicht Entscheidungsoptionen die über einen Zufallsgenerator den Spieler zu einer weiteren Szene bringen).
