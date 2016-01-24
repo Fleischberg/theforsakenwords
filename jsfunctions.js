@@ -1,4 +1,4 @@
-var image = document.getElementById("image");
+	var image = document.getElementById("image");
 	var text = document.getElementById("text");
 	var button = document.getElementById("button");
 	var playerLife;
