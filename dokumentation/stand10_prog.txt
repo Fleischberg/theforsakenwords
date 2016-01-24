@@ -2,7 +2,7 @@ Code ist als .js Datei hochgeladen.
 Bisher im Spiel :
 -Story der Einführung(Chapter 0).
 -Festgelegte Kampfsituationen.
--Kampfsystem mit Angreifen  /Blocken  und Heilen.
+-Kampfsystem mit Angreifen  /Blocken  und Heilen.(Noch zu verbessern bisher muss jeder Kampf einzeln dazu geschrieben werden)
 
 Demnächst :
 -Weitere Story.
