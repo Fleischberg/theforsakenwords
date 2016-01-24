@@ -201,6 +201,36 @@
 	
 	
 	}
+	/*
+	Heilen
+	if(s=="  "){
+			 
+			schadenG = schadenGegner[Math.floor(Math.random()*schadenGegner.length)];
+			
+			if(heal<=schadenG){
+			playerLife= playerLife +(heal-schadenG);
+			}
+			else{
+			playerLife=playerLife+heal;
+				if (playerlife > 10){
+					playerlife = 10;
+				}
+			}
+			
+			if(playerLife<=0){
+				changeScene(gameover);
+				playerLife = 10;
+				enemyLife = 10;
+			}
+			else if (playerLife!=0 && enemyLife!=0){
+				text.innerHTML = ("Gegner ("+enemyLife+") nimmt "+schadenH+" Schaden. Du ("+playerLife+") helilst "+heal+" und nimmst "+schadenG+" Schaden");
+				button.innerHTML = "<button onClick="+'"'+"kampf( )"+'"'+">Angreifen</button>";
+				button.innerHTML += "<button onClick="+'"'+"kampf( )"+'"'+">Blocken</button>";
+				button.innerHTML += "<button onClick="+'"'+"kampf( )"+'"'+">Heilen</button>";
+			}
+		}
+		
+	*/
 	
 	
 	
