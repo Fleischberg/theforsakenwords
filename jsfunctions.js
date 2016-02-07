@@ -223,10 +223,10 @@
 				enemyLife = 10;
 			}
 			else if (playerLife!=0 && enemyLife!=0){
-				text.innerHTML = ("Gegner ("+enemyLife+") nimmt "+schadenH+" Schaden. Du ("+playerLife+") helilst "+heal+" und nimmst "+schadenG+" Schaden");
+				text.innerHTML = ("Gegner ("+enemyLife+") nimmt "+schadenH+" Schaden. Du ("+playerLife+") heilst "+heal+" und nimmst "+schadenG+" Schaden");
 				button.innerHTML = "<button onClick="+'"'+"kampf( )"+'"'+">Angreifen</button>";
 				button.innerHTML += "<button onClick="+'"'+"kampf( )"+'"'+">Blocken</button>";
-				button.innerHTML += "<button onClick="+'"'+"kampf( )"+'"'+">Heilen</button>";
+				button.innerHTML += "<button onClick="+'"'+"kampf( )"+'"'+">Heilen("+maxPots+")</button>";
 			}
 		}
 		
