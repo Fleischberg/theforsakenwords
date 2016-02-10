@@ -7,3 +7,19 @@ Bisher im Spiel :
 Demnächst :
 -Weitere Story.
 (Vielleicht Entscheidungsoptionen die über einen Zufallsgenerator den Spieler zu einer weiteren Szene bringen).
+
+=== Feedback Alpers, Feb 10 ===
+
+Der JavaScript-Teil sieht im Rahmen des Leistungsnachweises Projekt 1 gut aus.
+Insbesondere finde ich gut, dass Sie die Textabschnitte so ausgelagert haben, dass eine Übertragung in
+eine Datenbank sehr leicht möglich wäre.
+Weiterhin haben Sie Code programmiert, der praktisch sofort lesbar ist. Das liegt zwar auch daran,
+dass Sie kaum komplexe Abläufe bzw. Funktionalitäten im Projekt haben, aber hier
+spielen die gut gewählten (weil selbsterklärenden) Bezeichner für Variablen und Funktionen
+eine genauso große Rolle.
+Und außerdem haben Sie sehr anschaulich die Anbindung an ein HTML-Dokument bzw. die Übergabe von HTML-Code
+integriert.
+
+Dagegen kann ich keinen eigentlichen HTML-Teil finden. Es gibt zwar die Datei homepage(.html), aber der Inhalt entspricht dem, was innerhalb weniger Minuten programmiert werden kann und genügt bei weitem nicht für eine Leistung im Sinne des Projekts 1.
+
+=== Feedback Alpers, Ende ===
